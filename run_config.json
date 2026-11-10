@@ -1,0 +1,40 @@
+{
+  "dataset": "Project-AgML/iNatAg-mini",
+  "full_iNatAg_images": 4720903,
+  "full_iNatAg_species": 2959,
+  "mini_images": 560844,
+  "mini_sampling": "up to 200 per species",
+  "selected_species_order": [
+    "zea_mays",
+    "glycine_max",
+    "ambrosia_artemisiifolia",
+    "raphanus_raphanistrum"
+  ],
+  "source_continent": "North America",
+  "target_continent": "Europe",
+  "zero_target_label_training": true,
+  "meaning_of_zero_shot": "zero target-continent examples/labels during model fitting; the four species classes are known from source training",
+  "epochs": 30,
+  "batch_size": 16,
+  "image_size": 224,
+  "augmentations": [
+    "random resized crop scale .75-1.0",
+    "horizontal/vertical flips p=.5",
+    "rotation +/-20 degrees",
+    "color jitter brightness/contrast .18, saturation .15, hue .03"
+  ],
+  "augmentation_policy": "on-the-fly, one random view per training image per epoch; no offline image copies; no validation/test augmentation",
+  "cnn_optimizer": "AdamW lr 1e-4, weight decay 1e-4, cosine annealing 30 epochs, weighted cross-entropy",
+  "bioclip_linear_optimizer": "AdamW classifier-head lr 1e-3, weight decay 1e-4, cosine annealing 30 epochs, frozen BioCLIP visual encoder, weighted cross-entropy",
+  "validation": "one fold of StratifiedGroupKFold(n_splits=5,shuffle=True,random_state=42) on source only, grouped by uploader",
+  "best_checkpoint": "highest source-validation macro-F1; target metrics are not used to choose winner",
+  "seed": 42,
+  "hardware": "CPU-only ARM64 sandbox, PyTorch CPU; 6 reported CPUs; no CUDA",
+  "class_display": {
+    "zea_mays": "Zea mays (maize; crop)",
+    "glycine_max": "Glycine max (soybean; crop)",
+    "ambrosia_artemisiifolia": "Ambrosia artemisiifolia (common ragweed; weed)",
+    "raphanus_raphanistrum": "Raphanus raphanistrum (wild radish; weed)"
+  },
+  "augmentation_counting": "Unique image count is unchanged by online transforms. Each model sees 30 x N_train stochastic views over 30 epochs."
+}

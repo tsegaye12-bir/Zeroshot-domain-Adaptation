@@ -1,0 +1,67 @@
+{
+  "n_source_train": 274,
+  "n_source_validation": 69,
+  "n_target_europe_test": 234,
+  "n_unique_selected_source_and_target": 577,
+  "n_source_train_views_per_model_30_epochs": 8220,
+  "epochs": 30,
+  "winner_by_source_validation": "BioCLIP-B/16 linear probe",
+  "winner_source_validation_macro_f1": 0.9722954179475919,
+  "target_europe_metrics": [
+    {
+      "model": "ResNet18",
+      "n_target_test": 234,
+      "accuracy": 0.7777777777777778,
+      "balanced_accuracy": 0.7834872628296602,
+      "macro_precision": 0.7833758235035437,
+      "macro_recall": 0.7834872628296602,
+      "macro_f1": 0.7774021451667759,
+      "source_validation_macro_f1": 0.862671181820118,
+      "parameters": 11178564.0
+    },
+    {
+      "model": "EfficientNet-B0",
+      "n_target_test": 234,
+      "accuracy": 0.7905982905982906,
+      "balanced_accuracy": 0.7970878917604778,
+      "macro_precision": 0.8014935136583597,
+      "macro_recall": 0.7970878917604778,
+      "macro_f1": 0.7920250799876882,
+      "source_validation_macro_f1": 0.8916957851719303,
+      "parameters": 4012672.0
+    },
+    {
+      "model": "MobileNetV3-Large",
+      "n_target_test": 234,
+      "accuracy": 0.811965811965812,
+      "balanced_accuracy": 0.8211326039849903,
+      "macro_precision": 0.8174759763841113,
+      "macro_recall": 0.8211326039849903,
+      "macro_f1": 0.8121866574940739,
+      "source_validation_macro_f1": 0.9457288401253918,
+      "parameters": 4207156.0
+    },
+    {
+      "model": "BioCLIP-B/16 linear probe",
+      "n_target_test": 234,
+      "accuracy": 0.9401709401709402,
+      "balanced_accuracy": 0.9430368373764599,
+      "macro_precision": 0.9415020485806262,
+      "macro_recall": 0.9430368373764599,
+      "macro_f1": 0.9402626054872469,
+      "source_validation_macro_f1": 0.9722954179475919,
+      "parameters": 149622789.0
+    },
+    {
+      "model": "BioCLIP zero-shot",
+      "n_target_test": 234,
+      "accuracy": 0.9188034188034188,
+      "balanced_accuracy": 0.9231138681887849,
+      "macro_precision": 0.9176794102276277,
+      "macro_recall": 0.9231138681887849,
+      "macro_f1": 0.9191137621478179,
+      "source_validation_macro_f1": NaN,
+      "parameters": NaN
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+split,species,crop_weed,n
+source_train,ambrosia_artemisiifolia,Weed,64
+source_train,glycine_max,Crop,57
+source_train,raphanus_raphanistrum,Weed,68
+source_train,zea_mays,Crop,85
+source_validation,ambrosia_artemisiifolia,Weed,16
+source_validation,glycine_max,Crop,14
+source_validation,raphanus_raphanistrum,Weed,17
+source_validation,zea_mays,Crop,22
+target_test,ambrosia_artemisiifolia,Weed,70
+target_test,glycine_max,Crop,53
+target_test,raphanus_raphanistrum,Weed,60
+target_test,zea_mays,Crop,51

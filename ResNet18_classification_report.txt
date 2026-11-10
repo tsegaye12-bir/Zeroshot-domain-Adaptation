@@ -1,0 +1,11 @@
+                                                precision    recall  f1-score   support
+
+                        Zea mays (maize; crop)     0.6567    0.8627    0.7458        51
+                   Glycine max (soybean; crop)     0.7736    0.7736    0.7736        53
+Ambrosia artemisiifolia (common ragweed; weed)     0.8929    0.7143    0.7937        70
+     Raphanus raphanistrum (wild radish; weed)     0.8103    0.7833    0.7966        60
+
+                                      accuracy                         0.7778       234
+                                     macro avg     0.7834    0.7835    0.7774       234
+                                  weighted avg     0.7932    0.7778    0.7794       234
+

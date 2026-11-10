@@ -1,0 +1,4 @@
+method,n_explanations,mean_deletion_auc_predicted_confidence,std_deletion_auc,interpretation
+Integrated Gradients,12,0.28630063086748125,0.03774129222485631,Lower deletion AUC indicates faster confidence reduction when top-attribution pixels are removed.
+Input Saliency,12,0.2892777891208728,0.03450346495349272,Lower deletion AUC indicates faster confidence reduction when top-attribution pixels are removed.
+Occlusion,12,0.3131662651896477,0.06514207249986576,Lower deletion AUC indicates faster confidence reduction when top-attribution pixels are removed.
